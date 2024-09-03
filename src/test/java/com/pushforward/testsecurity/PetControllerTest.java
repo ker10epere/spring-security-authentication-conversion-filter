@@ -18,7 +18,7 @@ class PetControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    @WithMockUser("ker")
+    @WithMockUser("mock_user")
     @Test
     void pet() throws Exception {
         mvc.perform(get("/pet")
